@@ -1,9 +1,9 @@
 #include<iostream>
 using namespace std;
-int part(int arr[],int l,int h){
+int part(int arr[],int low,int h){
 	int pivot = arr[h];
-	int i=l-1,j;
-	for(j=l;j<=h-1;j++){
+	int i=low-1,j;
+	for(j=low;j<=h-1;j++){
 		if(arr[j]<=pivot){
 			i++;
 			int temp = arr[i];
